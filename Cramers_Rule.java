@@ -25,15 +25,19 @@ public class Cramers_Rule{
 
 		
 		D=a*d-b*c;
-		Dx=e*d-b*f;
-		Dy=a*f-c*e;
-		x=Dx/D;
-		y=Dy/D;
-
 		
-		System.out.println("Value of x:"+x);
-		System.out.println("Value of y:"+y);
+		if(D!=0){
+			Dx=e*d-b*f;
+			Dy=a*f-c*e;
+			x=Dx/D;
+			y=Dy/D;
 
+			System.out.println("Value of x:"+x);
+			System.out.println("Value of y:"+y);
+		}
+		else{
+			System.out.println("The system has no unique solution.");
+		}
 		sc.close();
 		
 	}
