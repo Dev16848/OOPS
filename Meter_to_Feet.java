@@ -8,7 +8,7 @@ public class Meter_to_Feet{
 		System.out.println("Enter the distance in meter:");
 		d=sc.nextFloat();
 
-		System.out.println("Distance in feet: "+ d*3.28084);
+		System.out.printf("Distance in feet: %.2f", d*3.28084);
 
 		sc.close();
 	}
